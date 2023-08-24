@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lab135"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-14 04:28:03 "/>
+        <attribute name="created" value="bGFiMTM1O0xBQjEzNS00MTsyMDIzLTA2LTE0OyIwMzoxNjozMSAiOzIxNDk="/>
+        <attribute name="edited" value="bGFiMTM1O0xBQjEzNS00MTsyMDIzLTA2LTE0OyIwNDoyODowMyAiOzE7MjI2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="(a+b&gt;c) AND (a+c&gt;b) AND (b+c&gt;a)">
+                <then>
+                    <if expression="(a=b) AND (b=c)">
+                        <then>
+                            <output expression="&quot;Equil&#225;tero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(a&lt;&gt;b) AND (b&lt;&gt;c) AND (a&lt;&gt;c)">
+                                <then>
+                                    <output expression="&quot;Escaleno&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Is&#243;sceles&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; um tri&#226;ngulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
